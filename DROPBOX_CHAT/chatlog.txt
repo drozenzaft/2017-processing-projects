@@ -1,0 +1,6 @@
+07/26/2017 - 06:08:32 PM: Welcome to Daniel's Processing-Dropbox Chat Tool!
+07/26/2017 - 06:15:28 PM: Messages are limited to 87 characters, so keep them short and sweet!
+07/26/2017 - 06:17:04 PM: Your Processing window will update LIVE as others type into their own chat tools.
+07/26/2017 - 06:17:12 PM: So you can chat in REAL time!
+07/26/2017 - 06:17:12 PM: Only the 20 most recent messages will be displayed in your Processing window.
+07/26/2017 - 06:17:12 PM: But enough exposition, let’s chat!
