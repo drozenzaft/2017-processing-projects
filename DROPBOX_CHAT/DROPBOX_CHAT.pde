@@ -144,12 +144,12 @@ void keyPressed() {
   //you can type while holding alt or shift, but alt or shift aren't typable characters themselves
   else if (keyCode == 16 || keyCode == 18) {
   }
-  //i don't want to type while these keys are pressed
-  else if (badKeys.contains(keyCode)) {
-  }
-  //pressing enter submits your message and writes to the file
+    //pressing enter submits your message and writes to the file
   else if (keyCode == ENTER && notSpaces()) {
     enter();
+  }
+  //i don't want to type while these keys are pressed
+  else if (badKeys.contains(keyCode) ) {
   }
   //for all keys with nonspecial functions: just types them
   else if (limit) {
