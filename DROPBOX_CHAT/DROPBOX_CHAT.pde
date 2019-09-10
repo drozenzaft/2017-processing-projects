@@ -52,7 +52,7 @@ void draw() {
   String hour = nf(hours, 2);
   String minute = nf(minute(), 2);
   String second = nf(second(), 2);
-  time = months+"/"+days+"/"+year()+" - "+hour+":"+minute+":"+second+t+": ";
+  time = "["+months+"/"+days+"/"+year()+" - "+hour+":"+minute+":"+second+t+"] "+System.getProperty("user.name") + ": ";
   cat = loadStrings("chatlog.txt");
   String field = "";
   //for receiving chat input from others in-window
@@ -62,16 +62,16 @@ void draw() {
     }
   }
   for (int j = 0; j < 6; j++) {
-    text(a.get(j), 10, j*20+20);
+    text(a.get(j), 3, j*20+20);
   }
   //displays previous lines of chat
   if (a.size() > 26) {
     for (int c = a.size()-1; c >= a.size()-20 && c >= 6; c--) {
-      text(a.get(c), 10, height-55-((a.size()-c)*20+5));
+      text(a.get(c), 3, height-55-((a.size()-c)*20+5));
     }
   } else {
     for (int c = 6; c < a.size(); c++) {
-      text(a.get(c), 10, c*20+20);
+      text(a.get(c), 3, c*20+20);
     }
   }
   //the rest of the draw displays the text in the field
